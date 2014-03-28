@@ -14,6 +14,12 @@
 	</script>
 </head>
 <body>
-	<button type="button" onclick="logVote(12);">do</button> 
+	
+	<ol>
+		<% votes.forEach(function(item) { %>
+			<button type="button" onclick="logVote(<%= item.key %>);"><%= item.key %>. <%= item.text %></button>
+		<% }); %>	
+	</ol>
+	 
 </body>
 </html>
