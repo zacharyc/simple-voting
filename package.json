@@ -1,6 +1,6 @@
 {
-  "name": "five-in-five",
-  "description": "five in five voting app",
+  "name": "voting",
+  "description": "this is a voting voting app",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
