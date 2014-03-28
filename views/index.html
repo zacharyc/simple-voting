@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Five In Five Voting</title>
+	<script type="text/javascript">
+	function logVote(vote) {
+		var form = document.createElement('form');
+	    form.setAttribute('method', 'post');
+	    form.setAttribute('action', '/vote/' + vote);
+	    form.style.display = 'hidden';
+	    document.body.appendChild(form)
+	    form.submit();
+	}
+	</script>
+</head>
+<body>
+	<button type="button" onclick="logVote(12);">do</button> 
+</body>
+</html>
